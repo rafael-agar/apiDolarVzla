@@ -21,3 +21,7 @@ fetch('http://DOMINIO/dolar-venezuela')
     })
     .catch((error) => console.log('Error:', error));
 });
+
+https://rafaelagar.com
+info@rafaelagar.com
+i.t.rafaelagar@gmail.com
