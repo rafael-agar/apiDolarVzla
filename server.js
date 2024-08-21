@@ -7,6 +7,10 @@ const port = process.env.PORT || 3000;
 
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('¡Hola, Bienvenido a la API de Dolar Vzla del BCV!');
+});
+
 app.get('/dolar-venezuela', async (req, res) => {
   const pyDolar = new pyDolarVenezuela('bcv');
   const data = await pyDolar.getMonitor("USD");
